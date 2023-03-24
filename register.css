@@ -1,0 +1,142 @@
+body {
+    font-size: 15px;
+    padding: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffc0cb;
+}
+
+label {
+    font-weight: 548;
+}
+
+input {
+    padding: 7.5px;
+    max-width: 90%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+button {
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 2px;
+    cursor: pointer;
+    background-color: #1abc9c;
+}
+
+hr {
+    margin: 15px auto;
+    border: none;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.register-container {
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.img-wrapper-register {
+    display: flex;
+    justify-content: center;
+}
+
+.lable-register {
+    margin-top: 45px;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #212529;
+    cursor: default;
+    text-align: center;
+}
+
+.form-wrapper-register {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-group-register {
+    width: 50%;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.labels-register span {
+    color: red;
+}
+
+.register-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-submit-register {
+    float: left;
+    width: 100px;
+    padding: 8px 0px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.fieldRequired {
+    border: 1px solid red !important;
+}
+
+.span-2 {
+    margin-bottom: 8px;
+    line-height: 20px;
+}
+
+#link-return-to-login {
+    margin-right: 150px;
+    margin-left: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#link-return-to-login:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .form-wrapper-register {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .input {
+        max-width: 100%;
+    }
+    body {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+    }
+    .form-group-register {
+        width: 100%;
+    }
+    /* 
+    .form-wrapper {
+      padding: 20px;
+    } */
+}

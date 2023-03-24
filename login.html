@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+     <link rel="stylesheet" href="login.css"/>
+  </head>
+  <body>
+    <div class="login-container-1">
+      <form aria-label="LoginFormLabel" 
+      action="#" 
+      id="LoginForm" 
+      method="post">
+        <div class="login-container-2">
+          <hr />
+          <div class="lable-login">
+            Login
+          </div>
+          <hr />
+          <div id="error-register"></div>
+
+          <div class="login-container-3">
+            <div class="input-of-login">
+              <input
+                type="text"
+                id="input-user-mail-login"
+                placeholder="Email Address"
+                name="user_mail"
+                class="checkinputp-login"/>
+               </div>
+            <div class="input-of-login">
+              <input
+                type="password"
+                id="input-user-password-login"
+                placeholder="Password"
+                name="password"
+                class="checkinputp-login"/>
+            </div>
+          </div>
+          <div class="login-container-4">
+             <a href="home.html" 
+             id="link-forgot-password">
+             Return-to-HomePage</a>
+             <a href="Register.html" 
+             id="link-register">
+            Register
+          </a>
+          </div>
+          <div class="submit-loginform">
+            <button id="btn-login" 
+            type="button" 
+            class="btn-class-login">
+            LOGIN
+            </button>
+          </div>
+          <hr />
+          <div class="lable-or">
+            OR
+          </div>
+          <hr />
+          <div class="login-container-5">
+            <div>
+              <a
+                href="https://www.facebook.com/"
+                class="cust-button facebook-btn"
+                >Login with Facebook
+                </a>
+            </div>
+            <div>
+              <a 
+              href="https://www.google.com/" 
+              class="google-btn">
+              <i class="fab fa-google"></i>
+                Sign in with Google
+              </a>
+            </div>
+            <div>
+              <a 
+              href="https://www.apple.com/in/" 
+              class="cust-button apple-btn">
+              <i class="fab fa-apple"></i>
+               sign in with Apple
+              </a>
+              <!-- <script src="./app.js"></script> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script type="module" src="./firebaseconfig.js">     
+  </script>
+  <script type="module" src="./login.js">     
+  </script>
+</html>

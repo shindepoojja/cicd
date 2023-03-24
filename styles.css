@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color:  #ffe6f2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #5d606b;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.left-bar {
+    background-color: var(--bg-color);
+    width: 230px;
+    border-right: 1px solid #e3e7f7;
+    position: relative;
+}
+.feather.feather-users{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.item {
+    color: var(--main-color);
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+ .item img { 
+     width: 14px;
+    height: 14px;
+    color: currentcolor;
+    margin-right: 10px;
+}
+
+.task_name{
+    margin: 10px auto;
+    font-size: 22px;
+}
+
+.task_description{
+    margin: 5px auto;
+    font-size: 22px;
+}
+.task_status{
+    margin: 2px auto;
+    font-size: 22px;
+}
+.task_createdAt{
+    margin: 2px auto;
+    font-size: 22px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 30px;
+    color: var(--task-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+body,
+.item,
+.top-part,
+.top-part .count {
+    align-items: center;
+}
+
+.form-div {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+input:not(:last-of-type) {
+    width: 30rem;
+    height: 2rem;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-right: 1rem;
+}
+
+button {
+    padding: 0.3rem;
+    width: 10rem;
+    background-color: #1abc9c;
+    color: aliceblue;
+    border: #1abc9c;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.task-div{
+    padding: 20px;
+}
+
+span.lable{
+margin-left: 50px;
+font-size: 22px;
+font-weight: bold;
+}
+
+#tasks-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    align-items: left;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-div {
+    min-width: 12rem;
+    padding: 0 2rem;
+    border: 1px solid rgb(27, 21, 21);
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 3px;  /* Remove scrollbar space */
+    background: rgb(239, 235, 235);  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.taskcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 15rem;
+    height: 150px;
+}
+
+.taskcard_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+
+}
+
+.taskcard_actions {
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+#logout_user{
+    font-size: 25px;
+}  
+
+/* Description  */
+
+
+#description-container{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+}
+#label-heading{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#modify-description{
+    font-size: 20px;
+}
+#end-date{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+#modify-end-date{
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+#modify-update-btn{
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+
+.action-list li:hover{
+    cursor: pointer;
+}
+
+
+/*  for responsive page */
+
+@media screen and (max-width: 900px) {
+    .left-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .task-manager {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .right-bar,
+    .page-content {
+        width: 100%;
+        display: block;
+    }
+    .tasks-wrapper {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .page-content {
+        padding: 40px 10px 0 10px;
+    }
+    .right-content {
+        padding: 10px 16px;
+    }
+    .category {
+        padding: 20px;
+    }
+}

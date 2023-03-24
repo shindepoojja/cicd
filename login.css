@@ -1,0 +1,174 @@
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3%;
+    background-color: #ffc0cb;
+}
+
+.login-container-1 {
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+
+.login-container-2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.img-wrapper-login {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.lable-login {
+    font-size: 26px;
+    font-weight: 545;
+    line-height: 1.5;
+    color: inherit;
+    font-family: inherit;
+    cursor: default;
+    text-align: center;
+    padding: 5px;
+}
+
+hr {
+    margin: 10px auto;
+    border: none;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.input-of-login {
+    padding: 2px;
+    font-size: 17px;
+}
+
+.login-container-4 {
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+#link-register {
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 5px;
+    float: right;
+}
+
+#link-register:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#link-forgot-password {
+    text-decoration: none;
+    background-color: transparent;
+    color: #007bff;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#link-forgot-password:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.btn-class-login {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+    width: 100%;
+    background-color:#1abc9c;
+}
+
+.requierd-login-details {
+    border: 1px solid red !important;
+}
+
+.lable-or {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.login-container-5 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 17px;
+    padding: 15px 1px;
+    clear: both;
+}
+
+input {
+    padding: 8px;
+    max-width: 96%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    border-radius: 5px;
+}
+
+.google-btn {
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+    background-color: #007bff;
+    font-size: 13px;
+}
+
+.apple-btn {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.cust-button {
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+}
+
+.fieldRequired {
+    border: 1px solid red !important;
+}
+
+.error-span-msg {
+    color: red;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#error-login {
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    input {
+        padding: 10px;
+        max-width: 90%;
+        width: 100%;
+    }
+}

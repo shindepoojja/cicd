@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+
+  <body>
+      <div class="register-container">
+       
+        <div class="lable-register">
+          Register
+        </div>
+        <hr />
+        <div class="form-wrapper-register">
+          <form aria-label="RegisterFormLabel" 
+          
+          id="RegsiterForm">
+            <div class="register-form">
+              <div class="form-group-register">
+                <label class="labels-register"
+                  >Full Name <span>*</span></label
+                ><br />
+                <input
+                  type="text"
+                  id="input-user-full-name-register"
+                  placeholder="john doe"
+                  name="full_name"
+                  class="checkinput-register"
+                />
+              </div>
+              <div class="form-group-register">
+                <label class="labels-register">
+                  Username <span>*</span></label>
+                  <br />
+                <input
+                  type="text"
+                  id="input-user-name-register"
+                  placeholder="johndoe11"
+                  name="uname"
+                  class="checkinput-register"
+                />
+              </div>
+              <div class="form-group-register">
+                <label class="register-form-labels">
+                  Email <span>*</span>
+                  </label>
+                  <br />
+                <input
+                  type="email"
+                  id="input-user-email-register"
+                  placeholder="johndoe11@email.com"
+                  name="user-email"
+                  class="checkinput-register"
+                  />
+              </div>
+              <div class="form-group-register">
+                <label class="labels-register"
+                  >Phone Number <span>*</span>
+                  </label>
+                  <br />
+                <input
+                  type="tel"
+                  id="input-user-phone-no-register"
+                  placeholder="97986545412"
+                  name="phone-no"
+                  class="checkinput-register"
+                  />
+              </div>
+              <div class="form-group-register">
+                <label class="labels-register"
+                  >Project Name <span>*</span>
+                  </label>
+                  <br />
+                <input
+                  type="text"
+                  id="input-user-project-name-register"
+                  placeholder="Name of Project"
+                  name="project-name"
+                  class="checkinput-register"
+                  />
+              </div>
+              <div class="form-group-register">
+                <label class="labels-register">
+                Password <span>*</span>
+                </label>
+                <br />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="password"
+                  name="password"
+                  class="checkinput-register"
+                  />
+              </div>
+              <div class="form-group-register">
+                <label class="labels-register">
+                Confirm Password <span>*</span>
+              </label>
+                <br />
+                <input
+                  type="password"
+                  id="input-user-confirm-password"
+                  placeholder="Confirm password"
+                  name="con_password"
+                  class="checkinput-register"
+                  />
+              </div>
+            </div>
+            <div class="register-footer">
+              <button class="btn-submit-register" 
+              type="button">
+              Register
+            </button>
+              <a href="home.html" 
+              id="link-return-to-login">
+              Return-to-HomePage
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./firebaseconfig.js">     
+    </script>
+    <script type="module" src="./register.js" ></script>
+    <!-- <script src="app.js"></script> -->
+  </body>
+
+</html>

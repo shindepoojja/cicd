@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management Dashboard UI</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="task-manager">
+        <!-- left bar starts -->
+        <div class="left-bar">
+            <div class="upper-part">
+                <div class="actions">
+                    <div class="circle"></div>
+                    <div class="circle-2"></div>
+                </div>
+            </div>
+
+            <!-- left content starts -->
+            <div class="left-content">
+                <ul class="action-list">
+        
+                    <li class="item">
+                        <img class="feather feather-users" src="svg/users.svg" alt="" />
+                        <a href="members.html" class="anchor">Members</a>
+                    </li>
+                    <li id="logout_user" class="item">
+                        <img class="feather feather-trash" src="svg/trash.svg" alt="" />
+                        <span class="anchor">Logout</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- left content ends -->
+        </div>
+    </div>
+    <div class="tasks-container">
+    <div class="form-div">
+        <input type="text" id="name_input" placeholder="Enter Name of Task" />
+        <input type="text" id="description_input" placeholder="Enter Description" />
+        <input type="date" id="input-date"  name="endDate" class="checkinput-register" />
+        <button class="addbtn" type="button" >Add Task</button>
+    </div>
+    
+    <div class="tasks-info-container">
+    <div id="tasks-div">
+        <div class="task-div">
+        <span class="lable">New tasks</span>
+        <div id="newtasks" class="wrapper-div">
+            <ul class=" new-list ">
+
+            </ul>
+        </div>
+        </div>
+        <div class="task-div">
+        <span class="lable">Active tasks</span>
+        <div id="activetasks " class="wrapper-div ">
+            <ul class="active-list ">
+
+            </ul>
+        </div>
+        </div>
+        <div class="task-div">
+        <span class="lable">Hold tasks</span>
+        <div id="holdtasks" class="wrapper-div ">
+            <ul class="hold-list ">
+
+
+            </ul>
+        </div>
+        </div>
+        <div class="task-div">
+        <span class="lable">Completed task</span>
+        <div id="closedtasks" class="wrapper-div ">
+            <ul class="closed-list ">
+
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div id="description-container"></div>
+    </div>
+    </div>    
+    <script type="module" src="./firebaseconfig.js "></script>
+    <script type="module" src="./index.js "></script>
+</body>
+
+</html>
